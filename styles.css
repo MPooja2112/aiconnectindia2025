@@ -373,8 +373,9 @@ body {
 
 @media (max-width: 768px) {
     .overlay-text {
-        font-size: 1.8rem;
-        white-space: nowrap;
+        font-size: 1rem;
+       
+        
     }
 
     .overlay-text1 {
@@ -395,7 +396,7 @@ body {
 @media (max-width: 480px) {
     .overlay-text {
         font-size: 1.5rem;
-        white-space: nowrap;
+        
     }
 
     .overlay-text1 {
@@ -417,10 +418,9 @@ body {
 
 @media (max-width: 390px) {
     .overlay-text {
-        font-size: 1rem;
-        white-space: nowrap;
-        margin-left: 50px;
-          
+        font-size: 0.5rem;
+        
+        
     }
 
     .overlay-text1 {
