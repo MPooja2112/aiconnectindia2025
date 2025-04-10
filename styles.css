@@ -1187,6 +1187,17 @@ body {
     font-weight: bold;
 }
 
+.overlay-text,
+.overlay-text1,
+.overlay-text2 {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    padding: 10px 20px;
+}
+
+
 /* 🔹 Responsive */
 @media (max-width: 768px) {
     .overlay-content {
