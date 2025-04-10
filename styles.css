@@ -354,8 +354,8 @@ body {
 @media (max-width: 1024px) {
     .overlay-text {
         font-size: 2rem;
-        font-size: 1.5rem;
-        margin-left: 7px;
+        font-size: 1.2rem;
+       
         white-space: nowrap;
     }
 
@@ -381,8 +381,8 @@ body {
 @media (max-width: 768px) {
     .overlay-text {
         font-size: 1rem;
-        font-size: 1.5rem;
-        margin-left: 7px;
+        font-size: 1.3rem;
+        
         white-space: nowrap;
         
     }
@@ -407,8 +407,8 @@ body {
 
 @media (max-width: 480px) {
     .overlay-text {
-        font-size: 1.5rem;
-        margin-left: 7px;
+        font-size: 1.3rem;
+       
         white-space: nowrap;
         
     }
@@ -423,7 +423,7 @@ body {
     }
 
     .countdown-box {
-        width: 60px;
+        width: 70px;
         
         padding: 6px;
         
@@ -436,8 +436,8 @@ body {
 
 @media (max-width: 390px) {
     .overlay-text {
-        font-size: 1.5rem;
-        margin-left: 7px;
+        font-size: 1.3rem;
+        
         white-space: nowrap;
         
         
@@ -453,7 +453,7 @@ body {
     }
 
     .countdown-box {
-        width: 65px;
+        width: 75px;
        
         padding: 5px;
     }
