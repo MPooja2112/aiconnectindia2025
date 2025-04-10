@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AICONNECTINDIA2025</title>
+    <link rel="icon" href="img/ailogo.png">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 40px 20px;
+          background: linear-gradient(to right, #ebb7d1, #b18bd9, #84b3c7);
+          background: linear-gradient(to right, #ebb7d1, #b18bd9, #84b3c7); 
+          
+        }
+    
+        h1 {
+          text-align: center;
+          font-size: 2.5rem;
+          margin-bottom: 40px;
+          color: #333;
+        }
+    
+        .container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 40px;
+        }
+    
+        .column {
+          flex: 1 1 300px;
+          max-width: 500px;
+          
+          background: linear-gradient(to right, #ebb7d1, #b18bd9, #84b3c7);
+          border-radius: 12px;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          padding: 30px;
+        }
+    
+        .column h2 {
+          font-size: 1.5rem;
+          margin-bottom: 20px;
+          color: #27055e;
+          border-bottom: 2px solid #27055e;
+          padding-bottom: 10px;
+        }
+    
+        .column ul {
+          list-style-type: none;
+          padding-left: 0;
+        }
+    
+        .column ul li {
+          margin-bottom: 12px;
+          font-size: 1rem;
+          color: #333;
+          font-weight: bold;
+        }
+    
+        @media (max-width: 768px) {
+          .container {
+            flex-direction: column;
+            align-items: stretch;
+          }
+        }
+
+
+        .section {
+      margin-top: 45px;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: rgb(60, 8, 145);
+      font-weight: bold;
+    }
+    .section h3 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: rgb(23, 3, 56);
+      font-weight: bold;
+    }
+
+    .speakers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .speaker-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .speaker-card img {
+      width: 130px;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #00d5ff;
+      margin-bottom: 15px;
+    }
+
+    .speaker-card h3 {
+      margin: 5px 0;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .speaker-card p {
+      font-size: 0.9rem;
+      color: #ccc;
+      color: rgb(60, 8, 145);
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      .section h2 {
+        font-size: 2rem;
+      }
+    }
+
+    /* Title Styling */
+#chief-guest-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 40px 0 20px;
+  font-weight: bold;
+}
+
+/* Scroll View Container */
+#chief-guest-grid {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding: 10px 20px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Hide scrollbar (optional, for aesthetic) */
+#chief-guest-grid::-webkit-scrollbar {
+  display: none;
+}
+
+/* Individual Scrollable Cards */
+#palanivel-card,
+#vanitha-card,
+#uma-card,
+#senthilrajan-card,
+#nalli-card {
+  min-width: 330px;
+  flex: 0 0 auto;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#palanivel-card:hover,
+#vanitha-card:hover,
+#uma-card:hover,
+#senthilrajan-card:hover,
+#nalli-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#palanivel-card img,
+#vanitha-card img,
+#uma-card img,
+#senthilrajan-card img,
+#nalli-card img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* Text Styling */
+#palanivel-card p,
+#vanitha-card p,
+#uma-card p,
+#senthilrajan-card p,
+#nalli-card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #333;
+}
+
+body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    .about-contact-section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 40px;
+      padding: 50px;
+      background: linear-gradient(to right, #f7c6d4, #c79bd9, #9dbada);
+      color: #222;
+      flex-wrap: wrap;
+    }
+
+    .about, .contact {
+      flex: 1 1 45%;
+    }
+
+    .about h2, .contact h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #333;
+      padding-bottom: 8px;
+      text-transform: uppercase;
+    }
+
+    .about p, .contact p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .contact p strong {
+      color: #000;
+    }
+
+    @media (max-width: 768px) {
+      .about-contact-section {
+        flex-direction: column;
+        padding: 30px 20px;
+      }
+
+      .about, .contact {
+        flex: 1 1 100%;
+      }
+    }
+
+
+    .about-contact-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background: linear-gradient(to right, #f8cdda, #a18cd1);
+  color: #1f1f1f;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-contact-section .about,
+.about-contact-section .contact {
+  width: 45%;
+}
+
+.about-contact-section h2 {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.about-contact-section hr {
+  border: none;
+  height: 2px;
+  background-color: #333;
+  margin-bottom: 20px;
+}
+
+.about-contact-section p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+    
+      </style>
+</head>
+<body>
+
+  <header>
+    <!-- Logo -->
+    <a href="#" class="logo">
+        <img src="img/ailogo.png" alt="Logo">
+    </a>
+
+    <!-- Hidden checkbox toggle -->
+    <input type="checkbox" id="menu-toggle" hidden>
+
+    <!-- Hamburger icon -->
+    <label for="menu-toggle" class="menu">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+    </label>
+
+    <!-- Navigation Menu -->
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li>
+                <a href="#">VISIT ⮛</a>
+                <ul class="dropdown">
+                    <li><a href="agenda.html">&nbsp;Agenda</a></li>
+                    <li><a href="regcat.html">Register</a></li>
+                    <li><a href="#tic">Passes & Pricing</a></li>
+                    <li><a href="#locid">Venue</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">SPEAK ⮛</a>
+                <ul class="dropdown">
+                    <li><a href="email5.html">Register as a speaker</a></li>
+                    <li><a href="propose.html">Propose your talk</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">INFO ⮛</a>
+                <ul class="dropdown">
+                    <li><a href="#locid">Venue</a></li>
+                    <li><a href="#">Nearby hotels</a></li>
+                    <li><a href="#">Code of conduct</a></li>
+                    <li><a href="#">Love diversity</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="nav-buttons-container">
+            <a href="regcat.html" class="nav-buttons">Register</a>
+            <a href="https://forms.gle/jrtMvt2XxaXSYMof6" class="nav-buttons">Exhibit</a>
+        </div>
+    </nav>
+</header>
+
+
+    <script src="script.js"></script>
+
+    
+    <main>
+        <div class="bg">
+        <video autoplay muted loop id="bg-video" class="bg-vid">
+            <source src="vid/vid3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+         
+
+        <p class="overlay-text"> 
+            &nbsp;&nbsp; FUTURE OF AI IN HEALTHCARE 
+           
+        </p>
+
+        <p class="overlay-text1"> 
+            &nbsp;&nbsp;&nbsp;<strong>Building AI. Innovating with AI.</strong> <br>
+            <br>
+            &nbsp;&nbsp; CHENNAI TRADE CENTER <br>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10th MAY, 2025 (SATURDAY)
+
+           
+        </p>
+        
+        <div class="overlay-text2">
+            <a href="regcat.html" class="nav-buttons">Register</a>
+            <a href="#" class="nav-buttons">Exhibit</a>
+        </div>
+
+        <div class="countdown-container">
+            <div class="countdown-box">
+                <span id="days">0</span>
+                <p>Days</p>
+            </div>
+            <div class="countdown-box">
+                <span id="hours">0</span>
+                <p>Hours</p>
+            </div>
+            <div class="countdown-box">
+                <span id="minutes">0</span>
+                <p>Minutes</p>
+            </div>
+            <div class="countdown-box">
+                <span id="seconds">0</span>
+                <p>Seconds</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-section1">
+        <p class="ai-description">
+            What is AIConnect India 2025?
+        </p>
+        <p>&nbsp; &nbsp; &nbsp; AIConnect India 2025 is a flagship conference and expo designed for tech innovators, developers, and industry leaders who are shaping the future of Artificial Intelligence. Whether you're integrating AI into your products or building cutting-edge AI technologies, this event is your platform to connect, learn, and grow.</p>
+    </div>
+   
+
+<!--    <div class="info-section2">
+        <p class="ai-description">
+            What is AI DevConf?
+        </p >
+        AI DevConf is a premier conference and expo tailored for tech professionals and developers looking to stay ahead by either leveraging AI in their work or contributing to the advancement of AI technologies.
+    </div>
+</main>
+-->
+
+<h1>CONFERENCE TRACKS</h1>
+
+  <div class="container">
+    <div class="column">
+      <h2>Building AI</h2>
+      <ul>
+        <li>AI Challenges & Innovation</li>
+        <li>Debate for AI Technologies</li>
+        <li>AI Ethics, Data Privacy and Regulations</li>
+        <li>AI Innovations in Healthcare Startups</li>
+      </ul>
+    </div>
+    
+    <div class="column">
+      <h2>Innovating with AI</h2>
+      <ul>
+        <li>How Deeply AI is Transforming in Healthcare Sector</li>
+        <li>AI for Diagnostics and Early Detection</li>
+        <li>AI in Hospitals and Clinical Decision Support</li>
+        <li>AI in Tuberculosis Detection</li>
+      </ul>
+    </div>
+  </div>
+
+<div class="container">
+<h2>WHO SHOULD ATTEND?</h2>
+<div class="grid">
+    <div class="card">
+        <img src="img/classmates.png" alt="Students">
+        <p>Engineering Students</p>
+    </div>
+    <div class="card">
+        <img src="img/professionals.png" alt="Developers">
+        <p>Healthcare Professionals</p>
+    </div>
+    <div class="card">
+        <img src="img/gradient-ai-alignment-illustration.png" alt="Developers">
+        <p>AI Technology Experts</p>
+    </div>
+   
+    <div class="card">
+        <img src="img/img3.jpg" alt="Developers" height="550px" width="550px">
+        <p>NGOs and Healthcare organization</p>
+    </div>
+    <div class="card">
+        <img src="img/gradient-ai-alignment-illustration.png" alt="Developers">
+        <p>Entrepreneurs and business leaders</p>
+    </div>
+    <div class="card">
+        <img src="img/gradient-ai-alignment-illustration.png" alt="Developers">
+        <p>Startups and Industry experts</p>
+    </div>
+    
+</div>
+</div>
+
+<div class="attend">
+<p class="whyAttend">WHY ATTEND?</p>
+<p>
+    
+
+If you don’t want to fall behind and want to stay ahead with the latest AI-powered innovations in healthcare, this conference is a must-attend. Explore cutting-edge AI applications transforming medical diagnostics, patient care, drug discovery, and healthcare automation.
+
+Learn how you can contribute to revolutionary AI frameworks that are reshaping healthcare, just like ChatGPT and DeepSeek have transformed AI. Meet leading experts, researchers, and industry pioneers, gain valuable insights, and stay in control of the future of AI in healthcare—for yourself, your organization, and the patients you serve.
+</p>
+</div>
+
+<div>
+    <h2 id="chief-guest-title">CHIEF GUEST</h2>
+    <div id="chief-guest-grid">
+  
+      <div id="palanivel-card">
+        <img src="img/chief.jpg" alt="Palanivel Thiaga Rajan">
+        <p><strong>Palanivel Thiaga Rajan</strong><br>Information Technology Minister</p>
+      </div>
+  
+      <div id="vanitha-card">
+        <img src="img/s3.jpg" alt="Vanitha Venugopal">
+        <p><strong>Dr. Soumya Swaminathan</strong><br>Chief Scientist at the World
+          Health Organisation</p>
+      </div>
+  
+      
+      <div id="senthilrajan-card">
+        <img src="img/chief2.jpg" alt="Dr. A. Senthilrajan">
+        <p><strong>Dr. A. Senthilrajan</strong><br>Registrar, Alagappa University</p>
+      </div>
+  
+     
+      <div id="nalli-card">
+        <img src="img/s1.jpg" alt="Nalli Kuppuswami Chetti">
+        <p><strong>Justice Dr.G.Jaichandran</strong><br>MADRAS High Court Judge</p>
+      </div>
+  
+    </div>
+  </div>
+  
+  
+<div class="section">
+    <h2>TENTATIVE SPEAKERS</h2>
+    <div class="speakers-grid">
+
+      
+      <div class="speaker-card">
+        <img src="img/s6.jpg" alt="Speaker">
+        <h3>Mr. Sridhar Vembu</h3>
+        <p>CEO of Zoho</p>
+      </div>
+
+     
+      <div class="speaker-card">
+        <img src="img/chief1.jpg" alt="Speaker">
+        <h3>Vanitha Venugopal </h3>
+        <p>CEO of Tamil Nadu Technology Hub</p>
+      </div>
+
+
+      <div class="speaker-card">
+        <img src="img/s.jpg" alt="Speaker">
+        <h3>Dr.Shashi Buluswar</h3>
+        <p>CEO,Institute for Transformative
+          Technologies(AI- driven public healthsolution)</p>
+      </div>
+
+
+      <div class="speaker-card">
+        <img src="img/s5.jpg" alt="Speaker">
+        <h3>Dr. Ramesh &amp; Sunil</h3>
+        <p>Founders of Wadhwani AI</p>
+      </div>
+
+
+      <div class="speaker-card">
+        <img src="img/s8.jpg" alt="Speaker">
+        <h3>Sh. Praveen P</h3>
+        <p>Nair, IAS</p>
+      </div>
+
+
+
+      <div class="speaker-card">
+        <img src="img/s4.jpg" alt="Speaker">
+        <h3>Mr. Anand Rangarajan</h3>
+        <p>VP, Engineering and Google Bangalore Site Lead</p>
+      </div>
+
+     
+      <div class="speaker-card">
+        <img src="img/s14.jpg" alt="Speaker">
+        <h3>Dr. Preetha Reddy</h3>
+        <p>Executive Vice Chairperson, Apollo</p>
+      </div>
+  
+      <div class="speaker-card">
+        <img src="img/s10.jpg" alt="Speaker">
+        <h3>Dr. Prashant Warier</h3>
+        <p>CEO of Qure.ai</p>
+      </div>
+
+      <div class="speaker-card">
+        <img src="img/ss.jpg" alt="Speaker">
+        <h3>Dr.Venkat padmanabhan</h3>
+        <p>Deputy Managing Director, Microsoft
+          research India</p>
+      </div>
+  
+      <div class="speaker-card">
+        <img src="img/s12.jpg" alt="Speaker">
+        <h3>Dr. Sandeep Dewan</h3>
+        <p>Director of Fortis Healthcare</p>
+      </div>
+
+  <div class="speaker-card">
+        <img src="img/chief3.jpg" alt="Speaker">
+        <h3>Nalli Kuppuswami Chetti</h3>
+        <p>Chair, Nalli Silk Sarees
+          (Textiles, retail)</p>
+      </div>
+
+    <!-- <div class="speaker-card">
+        <img src="img/s7.jpg" alt="Speaker">
+        <h3>Dr. Republica Sridhar</h3>
+        <p>RMD Nursing Home</p>
+      </div>
+    -->
+
+     
+      <div class="speaker-card">
+        <img src="img/s16.jpg" alt="Speaker">
+        <h3>Dr. Aravindan Selvaraj</h3>
+        <p>Executive Director, Kauvery Hospital</p>
+      </div>
+  
+    </div>
+  </div>
+
+  
+
+<div class="section">
+    <div class="speakers-grid">
+  
+     
+    
+  
+     
+     
+  
+      <div class="speaker-card">
+        <img src="img/s13.jpg" alt="Speaker">
+        <h3>Mr. Girish Raghavan</h3>
+        <p>Vice President of GE Healthcare</p>
+      </div>
+  
+     
+      <div class="speaker-card">
+        <img src="img/s15.jpg" alt="Speaker">
+        <h3>Mr. Nitin Kumar</h3>
+        <p>Vice President of Healthcare at TCS</p>
+      </div>
+  
+      <div class="speaker-card">
+        <img src="img/uma.jpg" alt="Speaker">
+        <h3>Uma Maheshwari</h3>
+        <p>TN-Rise Women Startup Council</p>
+      </div>
+
+    </div>
+  </div>
+  
+
+<div id="tic" class="tickets">
+    <h1>TICKETS & PASSES</h1>
+
+    <h2>Here's an overview of the variety of tickets & passes available for you to benefit from different facets of AI DEV CON India.</h2>
+
+    <div class="card2">
+          <div class="pass">
+            <h1>EXPO PASS</h1>
+            <h3>Free!</h3>
+            <h5>🗸 Access to Expo <br>
+                🗸 Access to Keynotes <br>
+                🗸 Access to Succeeding with AI track on both days</h5>
+                <p><a href="regcat.html">Avail Now</a></p>
+          </div>
+
+          <div class="pass">
+            <h1>SILVER PASS</h1>
+            <h3>₹0</h3>
+            <h5>🗸 Access to Expo <br>
+                🗸 Access to Keynotes <br>
+                🗸 Access to Succeeding with AI track on both days</h5>
+                <p><a href="qrcode.html">Buy Now</a></p>
+          </div>
+
+          <div class="pass">
+            <h1>GOlD PASS</h1>
+            <h3>₹0</h3>
+            <h5>🗸 Access to Expo <br>
+                🗸 Access to Keynotes <br>
+                🗸 Access to Succeeding with AI track on both days</h5>
+                <p><a href="https://buy.stripe.com/test_9AQ8xy33B6op6bu7sy">Buy Now</a></p>
+          </div>
+
+          <div class="pass">
+            <h1>PLATINUM PASS</h1>
+            <h3>₹0</h3>
+            <h5>🗸 Access to Expo <br>
+                🗸 Access to Keynotes <br>
+                🗸 Access to Succeeding with AI track on both days</h5>
+                <p><a href="https://buy.stripe.com/test_cN26pq6fN9ABczS007">Buy Now</a></p>
+          </div>
+    </div>
+</div>
+
+
+<h1 id="locid" class="loc"> Our Location</h1>
+<section style="display: flex; justify-content: center; align-items: stretch; gap: 20px; padding: 40px;  background: linear-gradient(to right, #ebb7d1, #b18bd9, #84b3c7);">
+    <!-- Map Image -->
+    <div style="flex: 1; max-width: 500px; height: 350px; border-radius: 10px; overflow: hidden;">
+        <img src="img/map.png" alt="Map Image" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
+
+    <!-- Address Box -->
+    <div class="box" style="flex: 1; max-width: 500px; height: 350px; background-color: #e6e6fa; border-radius: 10px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 20px; box-sizing: border-box;">
+        <p style="color: #26005c; font-weight: bold; font-size: 18px;">
+            CTC Complex, Mount Poonamallee Road,<br>
+            Nandambakkam Kudiyiruppu, Chennai - 600089
+        </p>
+    </div>
+
+    <!-- Google Maps Embed -->
+    <div style="flex: 1; max-width: 500px; height: 350px; border-radius: 10px; overflow: hidden;">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3887.329156359297!2d80.18861752484216!3d13.014698837304639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sCTC%20Complex%2C%20Mount%20Poonamallee%20Road%2C%20Nandambakkam%20Kudiyiruppu%2C%20Chennai%20-%20600089%20!5e0!3m2!1sen!2sin!4v1742533343304!5m2!1sen!2sin"
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h2>ABOUT AICONNECTINDIA2025</h2>
+      <p>
+        AIConnectIndia 2025 is a landmark conference dedicated to exploring the future of Artificial Intelligence in Healthcare.
+        Organized by <strong>Open Source For You</strong> magazine in partnership with India’s AI and healthcare ecosystem, this
+        event brings together healthcare professionals, AI innovators, industry leaders, researchers, and policymakers on a common platform.
+      </p>
+    </div>
+
+    <div class="footer-contact">
+      <h2>CONTACT US</h2>
+      <p><strong>Email:</strong> Info@mrtech.co.in</p>
+      <p><strong>Phone:</strong> +91-9042545258</p>
+    </div>
+  </div>
+
+<!--<div class="footer-bottom">
+    <p>© Copyright 2025 aiconnectindia2025.vercel.app</p>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a> |
+      <a href="#">About Us</a> |
+      <a href="#">Contact Us</a> |
+      <a href="#">Love Diversity</a> |
+      <a href="#">Subscription & Account Removal</a>
+    </div>
+  </div>
+-->
+</footer>
+
+
+</main>
+</body>
+</html>
+
+    
