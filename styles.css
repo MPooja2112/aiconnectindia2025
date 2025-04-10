@@ -1245,3 +1245,143 @@ body {
         padding: 8px;
     }
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.bg {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-vid {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/* Overlay Content Centered + No Wrap */
+.overlay-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
+    text-align: center;
+    z-index: 10;
+    padding: 20px;
+}
+
+/* Text Styles */
+.overlay-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1b0245;
+    margin-bottom: 10px;
+}
+
+.overlay-text1 {
+    font-size: 1.5rem;
+    color: #24055b;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.overlay-text2 .nav-buttons {
+    margin: 5px 10px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #2a046a;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Countdown */
+.countdown-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.countdown-container::-webkit-scrollbar {
+    display: none;
+}
+
+.countdown-box {
+    background: #d5cfff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: rgb(32, 2, 114);
+    min-width: 80px;
+    text-align: center;
+}
+
+.countdown-box span {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .overlay-text {
+        font-size: 2rem;
+    }
+
+    .overlay-text1 {
+        font-size: 1.2rem;
+    }
+
+    .nav-buttons {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+
+    .countdown-box span {
+        font-size: 1.5rem;
+    }
+
+    .countdown-box {
+        min-width: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .overlay-text {
+        font-size: 1.5rem;
+    }
+
+    .overlay-text1 {
+        font-size: 1rem;
+    }
+
+    .countdown-box span {
+        font-size: 1.2rem;
+    }
+
+    .countdown-box {
+        min-width: 65px;
+        padding: 8px;
+    }
+}
+
