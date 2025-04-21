@@ -301,15 +301,15 @@ body {
 }
 
 .overlay-text {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
     color: #1b0245;
     margin-bottom: 10px;
 }
 
 .overlay-text1 {
-    font-size: 2rem;
-    color: #24055b;
+    font-size: 1.5rem;
+    color: #18033b;
     margin-bottom: 20px;
 }
 
@@ -531,7 +531,7 @@ body {
     flex-wrap: wrap;
 }
 
-.card {
+.card6 {
     background: white;
     padding: 20px;
     width: 450px;
@@ -542,19 +542,19 @@ body {
     background: linear-gradient(to right, #ebb7d1, #b18bd9, #84b3c7); 
 }
 
-.card img {
+.card6 img {
     width: 80px;
     height: auto;
     margin-bottom: 10px;
 }
 
-.card p {
+.card6 p {
     font-size: 18px;
     font-weight: bold;
     color: #2a046a;
 }
 
-.card:hover {
+.card6:hover {
     transform: scale(1.05);
 }
 

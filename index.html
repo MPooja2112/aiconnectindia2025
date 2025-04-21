@@ -284,36 +284,177 @@ body {
 
     
       </style>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+     
+    color: #333;
+  }
+  .containers {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  h1, h2 {
+    color: #03263f;
+  }
+  .cards1 {
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  .cards1 {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+gap: 30px; /* Increased from 20px */
+}
+
+
+  .card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    display: flex;
+    width: 550px;
+    height: 320px;
+    background: linear-gradient(to right, #fab8d9, #b18bd9, #a9def5);
+    font-weight: bold;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 50px;
+  }
+
+  .card1 {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    display: flex;
+    width: 500px;
+    height: 300px;
+    font-weight: bold;
+    background: linear-gradient(to right, #ebb7d1, #b18bd9, #84b3c7);
+    background: linear-gradient(to right, #fab8d9, #b18bd9, #a9def5);
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 50px;
+  }
+  .card h3 {
+    margin-top: 0;
+    color: #0f0f0f;
+  }
+  .card ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  .card ul li {
+    margin-bottom: 8px;
+  }
+  .card1 h3 {
+    margin-top: 0;
+    color: #171717;
+  }
+  .card1 ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  .card1 ul li {
+    margin-bottom: 8px;
+  }
+  .card4 {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    display: flex;
+    width: 500px;
+    height: 130px;
+    font-weight: bold;
+    background: linear-gradient(to right, #ebb7d1, #b18bd9, #84b3c7);
+    background: linear-gradient(to right, #fab8d9, #b18bd9, #a9def5);
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 50px;
+  }
+  .card4 h3 {
+    margin-top: 0;
+    color: #181818;
+  }
+  .card4 ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  .card4 ul li {
+    margin-bottom: 8px;
+  }
+  .buy-btn {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-start;
+  }
+  .buy-btn:hover {
+    background-color: #0056b3;
+  }
+  .footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+  }
+
+  .part{
+    margin-top: 20px;
+    display: inline-block;
+    text-align: left;
+  }
+
+  .partners{
+    background: linear-gradient(to right, #f7c6d4, #c79bd9, #9dbada);
+    text-align: center;
+    font-size: 1rem;
+  }
+</style>
 </head>
 <body>
 
   <header>
-    <!-- Logo -->
+    
     <a href="#" class="logo">
-        <img src="img/ailogo.png" alt="Logo">
+      <img src="img/ailogo.png" alt="Logo" height="70px" width="170px">
+      
     </a>
 
-    <!-- Hidden checkbox toggle -->
+ 
     <input type="checkbox" id="menu-toggle" hidden>
 
-    <!-- Hamburger icon -->
+   
     <label for="menu-toggle" class="menu">
         <div class="menu-line"></div>
         <div class="menu-line"></div>
         <div class="menu-line"></div>
     </label>
 
-    <!-- Navigation Menu -->
+    
     <nav class="mobile-nav">
         <ul>
             <li><a href="#">HOME</a></li>
             <li>
-                <a href="#">VISIT ⮛</a>
+                <a href="#">PROGRAM ⮛</a>
                 <ul class="dropdown">
                     <li><a href="agenda.html">&nbsp;Agenda</a></li>
-                    <li><a href="regcat.html">Register</a></li>
+                    <li><a href="#chief-guest-title">Speakers</a></li>
+                   
                     <li><a href="#tic">Passes & Pricing</a></li>
-                    <li><a href="#locid">Venue</a></li>
+                    
                 </ul>
             </li>
             <li>
@@ -327,9 +468,9 @@ body {
                 <a href="#">INFO ⮛</a>
                 <ul class="dropdown">
                     <li><a href="#locid">Venue</a></li>
-                    <li><a href="#">Nearby hotels</a></li>
-                    <li><a href="#">Code of conduct</a></li>
-                    <li><a href="#">Love diversity</a></li>
+                    <li><a href="#partnership">partners Of 2025</a></li>
+                    <li><a href="registers.html">Showcase My Brand</a></li>
+                 
                 </ul>
             </li>
         </ul>
@@ -359,11 +500,11 @@ body {
         </p>
 
         <p class="overlay-text1"> 
-            &nbsp;&nbsp;<strong>Building AI. Innovating with AI.</strong> <br>
-            <br>
+          TRENDS SHAPING THE FUTURE OF INNOVATION.
+<br>
             CHENNAI TRADE CENTER <br>
             
-            &nbsp;10th MAY, 2025 (SATURDAY)
+            &nbsp;24th MAY, 2025 (SATURDAY) 
 
            
         </p>
@@ -393,7 +534,7 @@ body {
         </div>
     </div>
 
-    <div class="info-section1">
+  <!--   <div class="info-section1">
         <p class="ai-description">
             What is AIConnect India 2025?
         </p>
@@ -401,7 +542,7 @@ body {
     </div>
    
 
-<!--    <div class="info-section2">
+   <div class="info-section2">
         <p class="ai-description">
             What is AI DevConf?
         </p >
@@ -414,7 +555,7 @@ body {
 
   <div class="container">
     <div class="column">
-      <h2>Building AI</h2>
+     
       <ul>
         <li>AI Challenges & Innovation</li>
         <li>Debate for AI Technologies</li>
@@ -424,7 +565,7 @@ body {
     </div>
     
     <div class="column">
-      <h2>Innovating with AI</h2>
+     
       <ul>
         <li>How Deeply AI is Transforming in Healthcare Sector</li>
         <li>AI for Diagnostics and Early Detection</li>
@@ -437,29 +578,33 @@ body {
 <div class="container">
 <h2>WHO SHOULD ATTEND?</h2>
 <div class="grid">
-    <div class="card">
+    <div class="card6">
         <img src="img/classmates.png" alt="Students">
         <p>Engineering Students</p>
     </div>
-    <div class="card">
+    <div class="card6">
         <img src="img/professionals.png" alt="Developers">
         <p>Healthcare Professionals</p>
     </div>
-    <div class="card">
+    <div class="card6">
         <img src="img/gradient-ai-alignment-illustration.png" alt="Developers">
         <p>AI Technology Experts</p>
     </div>
    
-    <div class="card">
+    <div class="card6">
         <img src="img/img3.jpg" alt="Developers" height="550px" width="550px">
         <p>NGOs and Healthcare organization</p>
     </div>
-    <div class="card">
-        <img src="img/gradient-ai-alignment-illustration.png" alt="Developers">
+    <div class="card6">
+      <img src="img/pic.jpg" alt="Policymakers and government representatives">
+      <p>Policymakers and government representatives</p>
+      </div>
+    <div class="card6">
+        <img src="img/pic.jpg" alt="Entrepreneurs and business leaders">
         <p>Entrepreneurs and business leaders</p>
     </div>
-    <div class="card">
-        <img src="img/gradient-ai-alignment-illustration.png" alt="Developers">
+    <div class="card6">
+        <img src="img/pic1.jpg" alt="Startups and Industry expert">
         <p>Startups and Industry experts</p>
     </div>
     
@@ -483,7 +628,12 @@ Learn how you can contribute to revolutionary AI frameworks that are reshaping h
   
       <div id="palanivel-card">
         <img src="img/chief.jpg" alt="Palanivel Thiaga Rajan">
-        <p><strong>Palanivel Thiaga Rajan</strong><br>Information Technology Minister</p>
+        <p><strong>Mr. Palanivel Thiaga Rajan</strong><br>Information Technology Minister</p>
+      </div>
+
+      <div id="nalli-card">
+        <img src="img/s1.jpg" alt="Nalli Kuppuswami Chetti">
+        <p><strong>Justice Dr.G.Jaichandran</strong><br>MADRAS High Court Judge</p>
       </div>
   
       <div id="vanitha-card">
@@ -499,10 +649,7 @@ Learn how you can contribute to revolutionary AI frameworks that are reshaping h
       </div>
   
      
-      <div id="nalli-card">
-        <img src="img/s1.jpg" alt="Nalli Kuppuswami Chetti">
-        <p><strong>Justice Dr.G.Jaichandran</strong><br>MADRAS High Court Judge</p>
-      </div>
+      
   
     </div>
   </div>
@@ -522,14 +669,14 @@ Learn how you can contribute to revolutionary AI frameworks that are reshaping h
      
       <div class="speaker-card">
         <img src="img/chief1.jpg" alt="Speaker">
-        <h3>Vanitha Venugopal </h3>
+        <h3>Mrs. Vanitha Venugopal </h3>
         <p>CEO of Tamil Nadu Technology Hub</p>
       </div>
 
 
       <div class="speaker-card">
         <img src="img/s.jpg" alt="Speaker">
-        <h3>Dr.Shashi Buluswar</h3>
+        <h3>Dr. Shashi Buluswar</h3>
         <p>CEO,Institute for Transformative
           Technologies(AI- driven public healthsolution)</p>
       </div>
@@ -547,7 +694,11 @@ Learn how you can contribute to revolutionary AI frameworks that are reshaping h
         <h3>Sh. Praveen P Nair</h3>
         <p> IAS</p>
       </div>
-
+      <div class="speaker-card">
+        <img src="img/s17.jpg" alt="Speaker">
+        <h3>Mr. sivarajah Ramanathan</h3>
+        <p>Chief Executive Officer Startup TN</p>
+      </div>
 
 
       <div class="speaker-card">
@@ -571,7 +722,7 @@ Learn how you can contribute to revolutionary AI frameworks that are reshaping h
 
       <div class="speaker-card">
         <img src="img/ss.jpg" alt="Speaker">
-        <h3>Dr.Venkat padmanabhan</h3>
+        <h3>Dr. Venkat padmanabhan</h3>
         <p>Deputy Managing Director, Microsoft
           research India</p>
       </div>
@@ -584,7 +735,7 @@ Learn how you can contribute to revolutionary AI frameworks that are reshaping h
 
   <div class="speaker-card">
         <img src="img/chief3.jpg" alt="Speaker">
-        <h3>Nalli Kuppuswami Chetti</h3>
+        <h3>Mr. Nalli Kuppuswami Chetti</h3>
         <p>Chair, Nalli Silk Sarees
           (Textiles, retail)</p>
       </div>
@@ -602,21 +753,6 @@ Learn how you can contribute to revolutionary AI frameworks that are reshaping h
         <h3>Dr. Aravindan Selvaraj</h3>
         <p>Executive Director, Kauvery Hospital</p>
       </div>
-  
-    </div>
-  </div>
-
-  
-
-<div class="section">
-    <div class="speakers-grid">
-  
-     
-    
-  
-     
-     
-  
       <div class="speaker-card">
         <img src="img/s13.jpg" alt="Speaker">
         <h3>Mr. Girish Raghavan</h3>
@@ -629,16 +765,151 @@ Learn how you can contribute to revolutionary AI frameworks that are reshaping h
         <h3>Mr. Nitin Kumar</h3>
         <p>Vice President of Healthcare at TCS</p>
       </div>
-  
       <div class="speaker-card">
         <img src="img/uma.jpg" alt="Speaker">
-        <h3>Uma Maheshwari</h3>
+        <h3>Mrs. Uma Maheshwari</h3>
         <p>TN-Rise Women Startup Council</p>
       </div>
+      
+    </div>
+  </div>
+
+  
+  
+
+<div class="section">
+    <div class="speakers-grid">
+  
+     
+    
+  
+      
+     
+  
+      
 
     </div>
   </div>
   
+
+  <div class="partners" id="partnership">
+    <h2>PARTNERS OF 2025</h2>
+    <img src="img/gcare.png" ><br>
+    
+    <img src="img/finstein.png" height="170px"><br>
+    <img src="img/RMD.png" height="170px">
+    
+    
+    
+
+  </div>
+  <div class="containers">
+    <h1>Sponsorship & Exhibition Opportunities</h1>
+
+    <h2>Sponsorship Opportunities</h2>
+    <div class="cards1">
+      <div class="card">
+        <h3>Platinum Sponsor - ₹10,00,000</h3>
+        <ul>
+          <li>Logo on all promotional materials, website, and event banners</li>
+          <li>Premium exhibition booth (3m x 3m)</li>
+          <li>15-minute keynote speaking opportunity</li>
+          <li>Full-page advertisement in the conference brochure</li>
+          <li>Complimentary passes for 5 delegates</li>
+          <li>Social media promotions and press mentions</li>
+        </ul>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+      <div class="card">
+        <h3>Gold Sponsor - ₹7,00,000</h3>
+        <ul>
+          <li>Logo on select promotional materials and event website</li>
+          <li>Standard exhibition booth (3m x 3m)</li>
+          <li>Half-page advertisement in the conference brochure</li>
+          <li>Complimentary passes for 3 delegates</li>
+          <li>Social media promotions</li>
+        </ul>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+      <div class="card">
+        <h3>Silver Sponsor - ₹4,00,000</h3>
+        <ul>
+          <li>Logo on event website and banners</li>
+          <li>Exhibition booth (2m x 2m)</li>
+          <li>Mention in the conference brochure</li>
+          <li>Complimentary passes for 2 delegates</li>
+          <li>Social media mention</li>
+        </ul>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+      <div class="card">
+        <h3>Associate Sponsor - ₹2,00,000</h3>
+        <ul>
+          <li>Logo on event website</li>
+          <li>Mention in the conference brochure</li>
+          <li>Complimentary pass for 1 delegate</li>
+        </ul>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+    <h2 style="margin-top: 40px;">Exhibition Opportunities</h2>
+    <div class="cards1">
+      <div class="card1">
+        <h3>Premium Exhibitor - ₹2,50,000</h3>
+        <ul>
+          <li>Exhibition booth (3m x 3m)</li>
+          <li>Company logo on event website</li>
+          <li>Inclusion in the exhibitor directory</li>
+          <li>Complimentary pass for 2 delegates</li>
+        </ul>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+      <div class="card1">
+        <h3>Standard Exhibitor - ₹1,50,000</h3>
+        <ul>
+          <li>Exhibition booth (2m x 2m)</li>
+          <li>Inclusion in the exhibitor directory</li>
+          <li>Complimentary pass for 1 delegate</li>
+        </ul>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+      <div class="card1">
+        <h3>Startup Pavilion - ₹75,000</h3>
+        <ul>
+          <li>Table space in the Startup Pavilion</li>
+          <li>Inclusion in the exhibitor directory</li>
+          <li>Networking opportunities with investors and industry leaders</li>
+        </ul>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+    <h2 style="margin-top: 40px;">Advertising Opportunities</h2>
+    <div class="cards1">
+      <div class="card4">
+        <h3>Full-Page Ad in Brochure - ₹1,00,000</h3>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+      <div class="card4">
+        <h3>Half-Page Ad in Brochure - ₹50,000</h3>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+      <div class="card4">
+        <h3>Conference Bag Branding - ₹2,00,000</h3>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+      <div class="card4">
+        <h3>Lanyard Branding - ₹1,50,000</h3>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+   
+  </div>
+
+
+
 
 <div id="tic" class="tickets">
     <h1>TICKETS & PASSES</h1>

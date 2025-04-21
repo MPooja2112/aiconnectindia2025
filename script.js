@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 function updateCountdown() {
-    const targetDate = new Date("May 10, 2025 00:00:00").getTime();
+    const targetDate = new Date("May 24, 2025 00:00:00").getTime();
     const now = new Date().getTime();
     const timeLeft = targetDate - now;
 
