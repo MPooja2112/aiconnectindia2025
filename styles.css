@@ -531,7 +531,7 @@ body {
     flex-wrap: wrap;
 }
 
-.card6 {
+.card {
     background: white;
     padding: 20px;
     width: 450px;
@@ -542,19 +542,19 @@ body {
     background: linear-gradient(to right, #ebb7d1, #b18bd9, #84b3c7); 
 }
 
-.card6 img {
+.card img {
     width: 80px;
     height: auto;
     margin-bottom: 10px;
 }
 
-.card6 p {
+.card p {
     font-size: 18px;
     font-weight: bold;
     color: #2a046a;
 }
 
-.card6:hover {
+.card:hover {
     transform: scale(1.05);
 }
 
