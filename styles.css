@@ -1028,7 +1028,7 @@ nav.mobile-nav {
   
   .footer-about
    {
-    flex: 1 1 500px;
+    width: 900px;
   }
   
   .footer h2 {
