@@ -52,6 +52,7 @@ nav ul li a {
     display: block;
     
     color: #000000;
+    
     border-radius: 5px;
 }
 
@@ -104,6 +105,7 @@ nav ul li ul.dropdown {
     left: 0;
     background-color: #ffffff;
     background: linear-gradient(to right, #ebb7d1, #b18bd9, #84b3c7); 
+    
     list-style: none;
     width: 180px;
     border-radius: 5px;
@@ -127,6 +129,7 @@ nav ul li ul.dropdown li a:hover {
     background: linear-gradient(to right, #ebb7d1, #b18bd9, #84b3c7); 
     color: #e1e3f7;
     font-weight: bold;
+    
 }
 
 /* 🔹 Show Dropdown on Hover (Desktop) */
@@ -160,7 +163,8 @@ nav ul li:hover ul.dropdown {
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
-    background-color: #000000;
+    background-color: #111111;
+    width:100px;
 }
 
 .menu-line {
@@ -186,6 +190,7 @@ nav ul li:hover ul.dropdown {
         position: absolute;
         top: 60px;
         left: 0;
+        margin-top: 60px;
         z-index: 1000;
         padding: 10px 0;
     }
@@ -212,10 +217,11 @@ nav ul li:hover ul.dropdown {
         
         
         display: none;
-        width: 100%;
-        background-color: linear-gradient(to right, #ebb7d1, #b18bd9, #84b3c7); 
+        width: 60%;
+        background-color: linear-gradient(to right, #ebb7d1, #b18bd9, #84b3c7);
+        
         text-align: center;
-        width:450px
+        width:250px;
         
         
     }
@@ -226,8 +232,9 @@ nav ul li:hover ul.dropdown {
 .dropdown{
     text-align: center;
     margin-left: 20%;
-    width: 350px;
+    width: 50px;
     background: linear-gradient(to right, #ebb7d1, #b18bd9, #84b3c7); 
+
     
 }
 
@@ -242,6 +249,7 @@ nav ul li:hover ul.dropdown {
     /* Show hamburger menu */
     .menu {
         display: flex;
+        padding:40px
     }
 
     nav ul li:hover ul.dropdown {
@@ -960,10 +968,11 @@ nav.mobile-nav {
   /* Hamburger menu styles */
   .menu {
     display: block;
-    width: 30px;
+    width: 40px;
     cursor: pointer;
     margin-left: auto;
     padding: 10px;
+    padding-left: 10px;
   }
   
   .menu-line {
